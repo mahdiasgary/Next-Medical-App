@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { AiFillCaretDown, AiFillCaretUp } from "react-icons/ai";
-const SelectedDiseaes = ({ diseaes, data, selectedSymptom }) => {
+const SelectedDiseaes = ({ diseaes, data, selectedSymptom ,showDiseasesItem}) => {
   const [symptomsOfSelectedDiseaes, setSymptomsOfSelectedDiseaes] = useState(
     []
   );
@@ -15,7 +15,7 @@ const SelectedDiseaes = ({ diseaes, data, selectedSymptom }) => {
 
   return (
     <div
-      className={`flex  bg-white bg-opacity-90   my-2  flex-col justify-between rounded-2xl `}
+      className={`flex  bg-white bg-opacity-90   my-2  flex-col justify-between rounded-2xl origin-right ${!showDiseasesItem && 'scale-x-0'} duration-300 `}
     >
       <div className="flex justify-between ">
         <div className="px-4 mt-3">{diseaes.value}</div>
