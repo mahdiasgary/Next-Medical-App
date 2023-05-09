@@ -79,7 +79,7 @@ export default function Home() {
       <main className={styles.q}>
         <div
           dir="rtl"
-          className="bg-[#efefef] pt-56 md:pt-20 dark:bg-[#1c1d21] flex min-h-screen w-full  flex-col items-center  md:items-end  p-24 "
+          className="bg-[#efefef] pt-56 md:pt-20  flex min-h-screen w-full  flex-col items-center  md:items-end  p-24 "
         >
           <div className="fixed z-0 rotate-[] -top-1 right-0 max-w-full  overflow-hidden ">
             <img
